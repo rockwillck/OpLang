@@ -2,18 +2,29 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8" />
-	<title>Hello, world!</title>
+	<title>OpLang</title>
 	<meta name="viewport" content="width=device-width,initial-scale=1" />
 	<meta name="description" content="" />
 	<link rel="stylesheet" type="text/css" href="style.css" />
-	<link rel="icon" href="">
+	<link rel="icon" href="icon.png">
 </head>
 <body>
-	<h1>OpLang Dashboard</h1>
+	<h1>OpLang Console</h1>
 	<h2>Output</h2>
 	<pre id="out"></pre>
 	<h2>Errors</h2>
 	<p id="errors"></p>
-	<script src="app.js"></script>
+
+	<script src="OpLang/globalVars.js"></script>
+	<script src="OpLang/operators/baseOperators.js"></script>
+	<script src="OpLang/messaging.js"></script>
+	<script src="OpLang/preprocessors/pemdas.js"></script>
+	<script src="OpLang/interpreter.js"></script>
+	<script src="OpLang/OpLang.js"></script>
+
+	<script>
+		proj = new OpLang("example")
+		proj.run()
+	</script>
 </body>
 </html>
