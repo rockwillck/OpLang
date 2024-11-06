@@ -11,15 +11,6 @@
 <body>
 	<div class="panels">
 		<div class="panel">
-			<h1>OpLang Playground</h1>
-			<small>View the documentation <a href="https://github.com/rockwillck/OpLang">here</a>. This is a <i>demo</i> - your code DOES NOT save.</small>
-			<h2>Code</h2>
-			<textarea id="code"></textarea>
-			<h2>Headers</h2>
-			<textarea id="headers"></textarea>
-			<button onclick="run()">RUN</button>
-		</div>
-		<div class="panel">
 			<h2>Output</h2>
 			<pre id="out"></pre>
 			<h2>Errors</h2>
@@ -37,9 +28,7 @@
 	<script src="OpLang/OpLang.js"></script>
 
 	<script>
-		function run() {
-			OpLang.runSnippet(document.getElementById("code").value, document.getElementById("headers").value)
-		}
+        OpLang.run("example")
 	</script>
 </body>
 </html>

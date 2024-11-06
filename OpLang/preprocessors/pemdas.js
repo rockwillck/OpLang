@@ -25,5 +25,15 @@ function math_preprocessor(expr, symbol) {
 }
 
 function pemdas_preprocessor(expr) {
-    return math_preprocessor(math_preprocessor(math_preprocessor(math_preprocessor(math_preprocessor(debracket(expr), "^"), "*"), "/"), "+"), "-")
+    return math_preprocessor(
+        math_preprocessor(
+            math_preprocessor(
+                math_preprocessor(
+                    math_preprocessor(
+                        debracket(expr), 
+                        "^"), // E
+                    "*"),  // M
+                "/"),  // D
+            "+"),  // A
+        "-") // S
 }

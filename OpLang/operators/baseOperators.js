@@ -1,7 +1,11 @@
 function add(x, y) { return (x + y) }
+
 function multiply(x, y) { return x * y }
+
 function divide(x, y) { return x/y }
+
 function power(x, y) { return x**y }
+
 function set(x, y) { 
     if (restrictedNamespaces.filter(x => {
        return (x.endsWith("*") && y.startsWith(x.slice(0, x.length - 1))) || (x == y)
@@ -12,8 +16,11 @@ function set(x, y) {
     }
     return x
 }
+
 function greater(x, y) { return (x > y) ? 1 : 0 }
+
 function equalto(x, y) { return (x == y) ? 1 : 0 }
+
 function then(x, y) { 
     if (x > 0) { 
         evaluate(debracket(y))

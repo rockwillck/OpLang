@@ -1,21 +1,27 @@
 # OpLang
 A operational programming language
+> NOTE: OpLang is an *experimental* language. It is not meant for production use.
 ## Big Ideas
-OpLang is called **Op**Lang because it is centered around **Op**erators.  
+OpLang is called **Op**Lang because it is centered around binary **Op**erators.  
+
 In OpLang, there are *no* functions and *no* classes. OpLang is neither a functional programming language nor an Object-Oriented programming language. It's an *operational* language.  
+
 There is also only one core data type in OpLang - a number. No strings, no lists. To print text, you need to output ASCII codes. OpLang is not meant to build text applications.  
 ## Examples
 The basic idea is simple:  
 `1 + 2` returns `3`  
 `5 / 3` returns `1.6666`  
+
 The magic comes with the non-mathematical operators:  
 `3 -> out` prints `3` to the console  
+
 And because OpLang supports writing your own operators, both using the JavaScript backend and in OpLang itself, you can write things like:  
 `ft : # * 12 + ##`  
 and use it like:
 `5 ft 2` to return `62`.
 ## Architecture
 OpLang is written in JavaScript with a local web-based console, meaning it's portable and runs on any device that can run basic JavaScript. That's... basically everywhere.  
+
 This also means OpLang is really easy to embed on the web. OpLang's JavaScript logic can be run entirely on the frontend - it truly is very lightweight - and because the output function is abstracted away, it can be modified to print to anywhere.  
 ### Files
 In an OpLang project, the file structure is as follows:
@@ -136,7 +142,9 @@ Evaluates y if x is true
 #### and / or
 Aliases for && / ||
 ## Running OpLang
-To run OpLang, clone this repository and serve its contents using any static file server. If you use Visual Studio Code, the Live Reload extension works well.
+To run OpLang, clone this repository and serve its contents using any static file server. Open the `console.html` file and edit the file prefix in `OpLang.run("example")` to the name of your project. The files in your project should be `PROJECTNAME.oph` or `PROJECTNAME.opl`.  
+
+If you use Visual Studio Code, the Live Reload extension works well.
 ## Roadmap
 OpLang is in a pre-alpha state right now, meaning it is not meant to be used.
 ### Preprocessors  

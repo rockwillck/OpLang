@@ -1,9 +1,6 @@
 body {
 	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-	/* background-color: #2e2e2e; */
-	/* color:  #d6d6d6; */
-	padding: 10px;
-	background-color: rgba(234, 196, 107, 0.208);
+	background-color: rgb(255, 250, 240);
 	color: rgb(47, 86, 93);
 }
 
@@ -15,18 +12,69 @@ pre {
 	white-space: pre-wrap;
 	font-size: inherit;
 	font-family: inherit;
-	/* background-color: #7979791d;
-	padding: 10px;
-	border-radius: 10px;
-	border: solid 1px #797979; */
 }
 
-.error, pre {
+.error, pre, textarea, #errors {
 	border: solid 2px;
 	padding: 10px;
 	box-shadow: 5px 10px;
 	box-sizing: border-box;
 	border-radius: 10px;
 	font-family: monospace;
-	margin-bottom: 50px;
+	width: 100%;
+	color: inherit;
+	flex: 1;
+}
+
+pre, textarea {
+	background-color: transparent;
+}
+
+textarea {
+	height: 100%;
+	margin-bottom: 40px;
+}
+
+.panels {
+	display: flex;
+	flex-wrap: wrap;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+.panel {
+	flex: 1;
+	padding: 30px;
+	box-sizing: border-box;
+	min-width: 400px;
+	display: flex;
+	flex-direction: column;
+}
+
+#errors, pre {
+	max-height: calc(50vh - 60px - 20px - 40px);
+	overflow: scroll;
+}
+.error {
+	margin-top: 20px;
+	translate: 0 -20px;
+}
+
+button {
+	background-color: rgb(47, 86, 93);
+	border-radius: 10px;
+	border: none;
+	padding: 10px;
+	box-sizing: border-box;
+	font: inherit;
+	color: rgb(255, 250, 240);
+	transition: 0.2s;
+}
+button:hover {
+	rotate: -1deg;
+}
+button:active {
+	rotate: 1deg;
 }
