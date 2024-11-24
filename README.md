@@ -146,7 +146,7 @@ To run OpLang, clone this repository and serve its contents using any static fil
 
 If you use Visual Studio Code, the Live Reload extension works well.
 ## Roadmap
-OpLang is in a pre-alpha state right now, meaning it is not meant to be used.
+OpLang is in a pre-alpha state right now, meaning it is not meant to be used in any serious capacity.
 ### Preprocessors  
 - [x] PEMDAS preprocessor
 - [ ] String preprocessor
@@ -162,6 +162,9 @@ You can contribute to the project by making pull requests.
 If you'd like to support me, as a developer, personally, I have a Buy Me a Coffee:  
 
 <a href="https://www.buymeacoffee.com/rockwill"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=☕&slug=rockwill&button_colour=FFDD00&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff" /></a>
+
+## Demo
+There's a playground available at [https://www.rockwill.dev/OpLang/](https://www.rockwill.dev/OpLang/).
 
 ## License
 This software is licensed under the Bok Choy General Software License. The full text of the license should be included below. If not, more information can be found at https://www.rockwill.dev/Bok-Choy-License/.
