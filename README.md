@@ -84,7 +84,7 @@ The typical loop is:
 In other words, the `evaluator` is provided a `debracketed` expression, which is then put through the `operation runner`.  
 #### Debracketer
 While the evaluator and operation runner can be implemented in many ways, the debracketer is important for several parts of OpLang. For example, preprocessors receive debracketed expressions.  
-The debracketer takes an expressions like `1 + ( 2 / 3 ) - ( 4 + ( 3 ^ 2 ) )` and returns
+The debracketer takes in expressions like `1 + ( 2 / 3 ) - ( 4 + ( 3 ^ 2 ) )` and returns
  ```javascript
 [
     1,
